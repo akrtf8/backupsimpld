@@ -83,19 +83,22 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
   return (
     <li>
       <Box
-        component={href ? (external ? "a" : RouterLink) : "div"}
-        to={!external ? href : undefined}
+ component={href && !external ? RouterLink : (href ? "a" : "div")}
+ to={href && !external ? href : undefined}
         href={external ? href : undefined}
         target={external ? "_blank" : undefined}
         rel={external ? "noreferrer" : undefined}
-        onClick={() => {
-          if (href && !external) {
-            // Check if onClose is a function before calling it to prevent errors during unmounting
-            if (typeof onClose === 'function') {
+ onClick={
+ external
+ ? () => {
+              if (href && !external) {
+                if (typeof onClose === 'function') {
  onClose();
-            }
+                }
  navigate(href);
-
+              }
+            }
+ : () => { if (typeof onClose === 'function') { onClose(); } }
           }
         }}
         sx={{
