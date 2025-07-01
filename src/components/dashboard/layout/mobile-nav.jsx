@@ -82,7 +82,7 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
 
   const content = (
     <Box
-      sx={{
+       sx={{
         alignItems: "center",
         borderRadius: 1,
           color: "var(--NavItem-color)",
@@ -138,7 +138,6 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
           </Typography>
         </Box>
       </Box>
-    </li>
   if (href && !external) {
     return (
       <li>
