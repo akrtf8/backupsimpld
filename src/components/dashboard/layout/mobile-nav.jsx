@@ -82,8 +82,9 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
 
   const content = (
     <Box
-          alignItems: "center",
-          borderRadius: 1,
+      sx={{
+        alignItems: "center",
+        borderRadius: 1,
           color: "var(--NavItem-color)",
           cursor: "pointer",
           display: "flex",
@@ -102,8 +103,7 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
             bgcolor: "var(--NavItem-active-background)",
             color: "var(--NavItem-active-color)",
           }),
-        }}
-      >
+      }}>
         {Icon && (
           <Box
             sx={{
@@ -139,8 +139,6 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
         </Box>
       </Box>
     </li>
-  );
-
   if (href && !external) {
     return (
       <li>
@@ -162,6 +160,4 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
   return <li>{content}</li>;
 
 
-}
-  );
 }
