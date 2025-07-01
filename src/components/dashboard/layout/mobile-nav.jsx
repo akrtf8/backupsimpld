@@ -7,7 +7,7 @@ import Drawer from "@mui/material/Drawer";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { Link as RouterLink, useLocation } from "react-router-dom";
-
+import { useNavigate } from 'react-router-dom';
 import { Logo } from "../../../components/core/logo";
 import { navIcons } from "./nav-icons";
 import { navItems } from "./config";
@@ -70,6 +70,7 @@ function renderNavItems({ items = [], pathname, onClose }) {
 }
 
 function NavItem({ disabled, external, href, icon, matcher, pathname, title, onClose }) {
+  const navigate = useNavigate();
   const active = isNavItemActive({
     disabled,
     external,
@@ -91,7 +92,7 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
           if (href && !external) {
             // Check if onClose is a function before calling it to prevent errors during unmounting
             if (typeof onClose === 'function') {
-              onClose();
+ onClose();
             }
 
           }
