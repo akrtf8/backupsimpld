@@ -1,0 +1,90 @@
+.pop-up-container-main .date-pick-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.pop-up-container-main .no-image-section {
+    height: 58vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up-container-main .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up-container-main .date-pick-title {
+    padding-right: 1rem;
+    font-size: 18px;
+    color: #444;
+}
+
+.pop-up-container-main .date-pick-main .item-1 {
+    margin: 0 2rem 0 1rem !important;
+}
+
+.pop-up-container-main .mui-1mv6xrr-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 10px 8px !important;
+    width: 14rem !important;
+}
+
+
+.pop-up-container-main .mui-1oscdf3-MuiInputBase-root-MuiOutlinedInput-root:nth-of-type(1) {
+    border: 1px solid #0080bc6b !important;
+}
+
+.pop-up-container-main .mui-1oscdf3-MuiInputBase-root-MuiOutlinedInput-root:nth-of-type(2) {
+    border: 1px solid #f31010 !important;
+}
+
+.pop-up-container-main .bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop-up-container-main .bottom-container .main-title {
+    margin: 0 2rem 0 1rem;
+    font-size: 16px;
+}
+
+.pop-up-container-main .dropDownMenu {
+    min-width: 20vw !important;
+}
+
+.pop-up-container-main .button-disable {
+    background-color: #0080bc75 !important;
+    padding: 10px 18px !important;
+    border-radius: 4px;
+}
+
+.dialog-box-main .MuiDialog-container .MuiPaper-root {
+    height: 65% !important;
+    width: 50% !important;
+    max-width: 60% !important;
+    max-height: 100% !important;
+}
+
+
+.dialog-box-main-table .MuiDialog-container .MuiPaper-root {
+    width: 100% !important;
+    max-width: 60%;
+    max-height: 90%;
+}
+
+.clinicListDilogBox .MuiPaper-root{
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    padding: 1rem;
+}
+
+.pop-up-container-main .image-show-list-main {
+    height: 500px;
+    overflow: scroll;
+}

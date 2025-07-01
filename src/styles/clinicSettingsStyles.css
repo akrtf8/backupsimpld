@@ -1,0 +1,177 @@
+.hidden {
+    display: none !important;
+}
+
+.clinic-settings-container {
+    padding: 20px;
+}
+
+.clinic-details-container {
+    margin-top: 2rem;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.settings-card {
+    padding: 20px;
+}
+
+.upload-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.upload-button {
+    font-size: 12px;
+}
+
+.clinic-settings-container .mui-xu1r15-MuiCardContent-root {
+    padding: 0px !important;
+}
+
+.mui-1qmg95e-MuiSwitch-root {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 2px !important;
+}
+
+.section-title-margin {
+    margin-bottom: 1rem !important;
+    margin-left: 0.5rem !important;
+    font-size: 22px !important;
+}
+
+
+.preview-box {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.preview-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.empty-preview {
+    width: 100%;
+    height: 100%;
+}
+
+.upload-section {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.upload-button {
+    min-width: 80px;
+}
+
+.settings-card-input-text {
+    margin-left: .5rem !important;
+    margin-bottom: .2rem !important;
+}
+
+/* patient reg num segtion */
+.clinic-settings-container .section-title {
+    font-weight: 600 !important;
+    font-size: 1.3rem !important;
+    margin-bottom: 4px !important;
+}
+
+.clinic-settings-container .main-card {
+    border-radius: 4px !important;
+}
+
+.clinic-settings-container .section-notifi-title {
+    margin-bottom: .8rem !important;
+}
+
+.patient-reg-num-main .settings-card {
+    border-radius: 4px !important;
+    /* padding-bottom: 0 !important; */
+}
+
+.patient-reg-num-main .patient_reg_num_button_main {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1.5rem 0 0 0;
+    margin-bottom: -0.5rem;
+}
+
+.patient-reg-num-main .patient_reg_num_button_main span {
+    border-radius: 4px !important;
+    padding: 6px 15px !important;
+}
+
+.patient-reg-num-main .patient_reg_num_button_main .patient_reg_num_button_cancel {
+    margin-right: 1rem !important;
+    border-color: #444 !important;
+    color: #444 !important;
+}
+
+.patient-reg-num-main .patient_reg_num_button_main .patient_reg_num_button_save {
+    padding: 6px 22px !important;
+}
+
+/* Clinic Logo Section */
+.print-section-main {
+    padding-top: 30px !important;
+}
+
+.print-section-main .main-card {
+    padding-bottom: 14px !important;
+}
+
+.print-section-button {
+    width: 6rem !important;
+    height: 2.2rem !important;
+    /* padding: 1rem 2.5rem !important; */
+    border-radius: 12px !important;
+    margin: 1rem 0rem 0 0rem !important;
+}
+
+/* clinic details sec */
+
+.clinic-details-container .button_main {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1.5rem 0 0 0;
+    margin-bottom: -0.5rem;
+}
+
+.details-container input{
+    padding: 12px 14px !important;
+} 
+
+.details-container .settings-card-input-text {
+    margin-top: .8rem !important;
+    font-size: 16px !important;
+    color: #444 !important;
+}
+
+.clinic-details-container .button_main span {
+    border-radius: 4px !important;
+    padding: 6px 15px !important;
+}
+
+.clinic-details-container .button_main .button_cancel {
+    margin-right: 1rem !important;
+    border-color: #444 !important;
+    color: #444 !important;
+}
+
+.clinic-details-container .button_main .button_save {
+    padding: 6px 22px !important;
+}

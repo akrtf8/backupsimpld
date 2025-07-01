@@ -1,0 +1,434 @@
+/* .admin-panel-container {
+    padding: 20px;
+  } */
+
+body {
+  color: #444444;
+  background-color: #D9D9D9;
+}
+
+.MuiContainer-root {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+
+/* clinic title sect */
+.clinic_title_main {
+  background-color: white !important;
+}
+
+.clinic_title_main .title_text_1 {
+  padding: 16px 10px 10px 16px;
+}
+
+.clinic_title_main .title_text_2 {
+  margin: 1rem;
+}
+
+.clinic_title_main .title_text_3 {
+  padding: 10px 0 16px 16px;
+}
+
+.clinic_title_main .title_text_4 {
+  margin-right: 16px;
+}
+
+.clinic_title_main .chip {
+  margin: 12px 16px 14px 0;
+  font-size: 14px;
+  color: white;
+  border-radius: 4px;
+  /* background-color: #079669; */
+}
+
+
+/* Analytics Section  */
+.analytics-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.analytics-section .section-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+  margin-left: 8px;
+}
+
+.analytics-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.analytics-card-master-db .analytics-card {
+  cursor: pointer;
+}
+
+.analytics-card-master-db .analytics-card:hover {
+  background-color: white;
+}
+
+.analytics-top-main {
+  margin: 1rem;
+}
+
+.analytics-top-main .analytics-card-total-pat {
+  margin-left: -1rem !important;
+  /* margin-right: 1rem !important; */
+}
+
+.analytics-top-main .analytics-card-total-appo {
+  margin-left: -0.8rem;
+  margin-right: 0.1rem;
+}
+
+.analytics-card-total-appo {
+  margin-left: -0.88rem !important;
+}
+
+.analytics-top-container .analytics-card {
+  padding: 13px 15px;
+  max-width: 100%;
+}
+
+.analytics-section .analytics-top-container {
+  margin: 1rem 0 0 1rem;
+}
+
+.analytics-section .arrow-icon {
+  /* font-size: 14px; */
+  /* color: #ff5252; */
+  margin-left: 8px;
+  /* font-weight: bold; */
+  margin-top: 4px;
+}
+
+.analytics-card div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credits-box .credit-item-1 {
+  margin: 0 0 4px 0;
+}
+
+.analytics-section,
+.subscription-section,
+.clinic-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.analytics-section .analytics-label {
+  color: #333;
+}
+
+.analytics-section .analytics-value {
+  font-weight: bold;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Subscription Details */
+.credits-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4444;
+}
+
+.credits-value {
+  font-weight: bold;
+}
+
+.admin-panel-container .edit-button {
+  float: right;
+  text-transform: none;
+  padding: 5px 20px;
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+/* Subscription Details Section */
+
+.subscription-details {
+  margin: 1rem 0;
+}
+
+.delete-clinic-button {
+  border-radius: 4px !important;
+  margin-bottom: -1rem;
+  /* font-size: 1rem !important;
+  width: fit-content !important;
+  height: fit-content !important; */
+}
+
+.subscription-section .subscription-details-title {
+  font-weight: 700;
+  color: #444;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.subscription-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.subscription-details .subscription-item {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.subscription-details .subscription-label {
+  font-size: 14px;
+  color: #444;
+  font-weight: bold;
+  margin: 0 1rem;
+  text-wrap: nowrap;
+}
+
+.admin-panel-container .subscription-value {
+  font-size: 16px;
+  font-weight: bold !important;
+  color: #333;
+  /* background-color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  width: fit-content;
+  min-width: 70%; */
+}
+
+
+/* Demo, Subscription, and Credits Section */
+.clinic_details_button_main button {
+  background-color: #F9FAFB;
+}
+
+.clinic_details_button_main .Mui-selected {
+  color: white !important;
+  background-color: #0081BC !important;
+  border-radius: 6px;
+}
+
+.mui-sn2yfa-MuiTabs-indicator {
+  display: none;
+}
+
+.MuiTabs-indicator {
+  display: none !important;
+}
+
+/* .subscription-dates {
+  margin: 20px;
+} */
+
+.subscription-dates .section-label {
+  font-weight: bold;
+  color: #444;
+  margin: 8px 0 6px 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.date-item,
+.credit-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-icon {
+  font-size: 16px;
+  margin-left: 8px;
+  color: #888888;
+}
+
+.demo-box {
+  background-color: rgba(187, 222, 251, 0.534);
+  padding: 15px 15px 8px 15px;
+  border-radius: 8px;
+  border: 1px solid #0080bc60;
+}
+
+.subscription-box {
+  background-color: #ffebee;
+  padding: 15px 15px 8px 15px;
+  border-radius: 8px;
+  border: 2px solid #ffcdd285;
+}
+
+.credits-box {
+  background-color: #d1f0cc;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(52, 172, 0, 0.459);
+}
+
+.subscription-date-label {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.subscription-date-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.credits-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+}
+
+.credits-value {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  border: none !important;
+  outline: none !important;
+}
+
+.subscription-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  background-color: #f3101027;
+  padding: 5px 8px 1px 8px;
+  border-radius: 4px;
+}
+
+.demo-box .subscription-input-container {
+  background-color: #0080bc31;
+}
+
+.subscription-box .subscription-input-container {
+  background-color: #f3101017;
+}
+
+.credits-box .subscription-input-container {
+  /* padding-bottom: 5px; */
+  background-color: #1bb60336;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.credits-box .subscription-input-container input {
+  outline: none !important;
+  border: 0 !important;
+  padding: 8px;
+}
+
+.credits-value .MuiOutlinedInput-root {
+  border: none;
+}
+
+.credits-value .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.credits-value .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: none;
+  /* Removes the border when focused */
+  outline: none;
+}
+
+
+/* clinic sec */
+.clinic-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.clinic-section .section-title {
+  font-weight: 700;
+  color: #444;
+  font-size: 18px;
+}
+
+.edit-button {
+  color: #007BFF;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.clinic-details-grid {
+  margin-top: 10px;
+}
+
+.clinic-detail-item {
+  display: flex;
+  align-items: center;
+}
+
+.clinic-section-label {
+  flex: 0 0 150px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.MuiTextField-root {
+  flex: 1;
+}
+
+.clinic-detail-item input {
+  padding: 11px;
+}
+
+.subscription-value {
+  /* padding: 7.5px 14px !important; */
+  border-radius: 6px;
+  background-color: #ffffff !important;
+}
+
+.date-item {
+  cursor: pointer;
+}
+
+.date-item .hidden-date-picker {
+  /* display: none !important; */
+  position: absolute !important;
+  z-index: -5 !important;
+}
+
+
+.date-item .css-z3c6am-MuiFormControl-root-MuiTextField-root {
+  /* display: none !important; */
+  position: absolute;
+  z-index: -5 !important;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

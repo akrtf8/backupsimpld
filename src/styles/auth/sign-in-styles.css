@@ -1,0 +1,49 @@
+.sign-forg-msg {
+    margin-top: 10px !important;
+    margin-bottom: 1rem !important;
+}
+
+.LoginButton {
+    box-shadow: none !important;
+    padding: 10px !important;
+}
+
+.login-main input {
+    padding: 15px 10px !important;
+    outline: none !important;
+    border: none !important;
+}
+
+/* login */
+.login-main .header {
+    font-size: 26px !important;
+    font-weight: bold !important;
+}
+
+.LoginButton {
+    border-radius: 4px !important;
+    color: #0081BC !important;
+    letter-spacing: 0.75px;
+}
+
+.LoginButton:hover,
+.login-main input:hover {
+    background-color: white !important;
+}
+
+.login-main .MuiOutlinedInput-root fieldset {
+    border: none !important;
+}
+
+.login-main .MuiOutlinedInput-root:hover fieldset {
+    border: none !important;
+}
+
+.login-main .MuiOutlinedInput-root.Mui-focused fieldset {
+    border: none !important;
+}
+
+.login-main input {
+    padding: 15px 10px !important;
+    outline: none !important;
+}

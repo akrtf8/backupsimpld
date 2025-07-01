@@ -1,0 +1,73 @@
+/* .MuiContainer-root {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-width: 100% !important;
+}
+
+
+.settingMsTableMain > .MuiContainer-root {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-width: 100% !important;
+} */
+
+
+main {
+    position: relative;
+}
+
+.setting-ms-header {
+    position: absolute;
+    top: -65px;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.setting-ms-table-card-main {
+    margin-top: 0rem;
+    padding-top: 1rem;
+    margin-bottom: -3rem;
+}
+
+.setting-ms-table-main {
+    max-height: 720px;
+}
+
+.setting-ms-table-input-search {
+    max-width: 50% !important;
+}
+
+.setting-ms-table {
+    width: 97.9% !important;
+    margin: 0 1rem !important;
+}
+
+.setting-ms-table>thead>tr>th {
+    background-color: #E3F2FD !important;
+    color: #444 !important;
+    font-weight: 600 !important;
+}
+
+.setting-ms-table>tbody>tr>td {
+    max-width: 100% !important;
+}
+
+.setting-ms-table>thead>th {
+    max-width: 100% !important;
+}
+
+.table-button-main button {
+    border-radius: 6px !important;
+}
+
+.input-enter-name div{
+    width: 24rem !important;
+}
+
+.input-enter-charges div{
+    width: 7rem !important;
+    margin-left: 8.5rem;
+}

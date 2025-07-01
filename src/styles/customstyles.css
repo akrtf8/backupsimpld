@@ -1,0 +1,32 @@
+
+.testclass{
+ color: red !important;
+ background-color: aqua !important;
+
+}
+
+
+.brand-color-text{
+  color: #54abd3;
+}
+
+.brand-color-bg{
+  background-color: #54abd3 !important;
+}
+
+.brand-color-bg-light{
+  background-color: #f0faff !important;
+}
+
+.dashboard-card-title-main{
+  font-size: 1rem !important;
+  font-weight: 600 !important
+}
+
+.dashboard-card-value-main {
+  margin-right: .5rem !important;
+}
+
+.homePageCardMain {
+  padding-bottom: 0 !important;
+}

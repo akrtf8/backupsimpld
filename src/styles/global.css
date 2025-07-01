@@ -1,0 +1,96 @@
+
+/* Hide the scrollbar but allow vertical scrolling */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--mui-palette-primary-main);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.MuiContainer-maxWidthXl {
+  max-width: 92% !important;
+}
+
+.mui-14ksm6d-MuiContainer-root {
+  max-width: 90% !important;
+}
+
+@media (min-width: 1440px) {
+  .mui-zbi050-MuiContainer-root {
+    max-width: none !important;
+    /* Disables the max-width */
+  }
+}
+
+/* .customer_main{
+  margin-top: -3rem !important;
+} */
+
+/* nav header */
+.css-1ty7g7t-MuiStack-root {
+  padding: 16px !important;
+}
+
+/* dashboard home */
+
+.testclass {
+  color: red !important;
+  background-color: aqua !important;
+
+}
+
+
+.brand-color-text {
+  color: #54abd3;
+}
+
+.brand-color-bg {
+  background-color: #54abd3 !important;
+}
+
+.brand-color-bg-light {
+  background-color: #f0faff !important;
+}
+
+.dashboard-card-title-font {
+  font-size: 62.5% !important;
+  font-weight: 600 !important
+}
+
+.mui-12qxpxw {
+  height: 100vh;
+}
+
+.css-46bh2p-MuiCardContent-root {
+  padding: 31px !important;
+}
+
+.css-46bh2p-MuiCardContent-root:last-child {
+  padding-bottom: 23px !important;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  display: none !important;
+}

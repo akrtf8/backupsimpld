@@ -1,0 +1,70 @@
+.intra-oral-main {
+    max-width: 100%;
+    margin: auto;
+}
+
+
+.edit-button {
+    color: #0081BC !important;
+    font-size: 16px !important;
+    padding: 4px 40px !important;
+    box-shadow: none !important;
+    background-color: #709fb46c !important;
+    border: 1px solid #0081BC !important;
+    border-radius: 8px !important;
+}
+
+.save-button {
+
+    color: #0081BC !important;
+    font-size: 16px !important;
+    padding: 6px 40px !important;
+    background-color: #6dadcb6c !important;
+    border: 1px solid #0081BC !important;
+    border-radius: 8px !important;
+}
+
+.row-action-button {
+    padding: 4px 10px !important;
+    border-radius: 6px !important;
+}
+
+.intra-oral-main th {
+    color: #444 !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+.intra-oral-main .table-main {
+    max-height: 500px;
+    /* Restricts the table height */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #0081BC transparent;
+    /* Thumb in red, track transparent */
+}
+
+/* WebKit Browsers (Chrome, Safari, etc.) */
+.intra-oral-main .table-main::-webkit-scrollbar {
+    width: 6px;
+    /* Adjust width for visibility */
+}
+
+.intra-oral-main .table-main::-webkit-scrollbar-thumb {
+    background: #0081BC;
+    /* Visible scroll thumb */
+    border-radius: 10px;
+    /* Optional rounded edges */
+}
+
+.intra-oral-main .table-main::-webkit-scrollbar-track {
+    background: transparent;
+    /* Transparent track */
+}
+
+.action-row {
+    display: flex !important;
+    justify-content: space-between !important;
+}
