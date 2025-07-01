@@ -38,7 +38,7 @@ export function MainNav() {
           sx={{ alignItems: 'center', justifyContent: 'space-between', minHeight: '64px', px: 2 }}
         >
           <Stack sx={{ alignItems: 'center' }} direction="row" spacing={2}>
-            {/* <IconButton
+            <IconButton
               onClick={() => {
                 setOpenNav(true);
               }}
@@ -47,7 +47,7 @@ export function MainNav() {
               <ListIcon />
             </IconButton>
             <Tooltip title="Search">
-              <IconButton>
+              <IconButton sx={{ display: { xs: 'none', lg: 'inline-flex' } }}>
                 <MagnifyingGlassIcon />
               </IconButton>
             </Tooltip> */}
