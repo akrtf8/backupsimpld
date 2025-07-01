@@ -52,14 +52,14 @@ export function MobileNav({ open, onClose, items = navItems }) {
       </Stack>
       <Divider sx={{ borderColor: "var(--mui-palette-neutral-700)" }} />
       <Box component="nav" sx={{ flex: "1 1 auto", p: "12px" }}>
-        {renderNavItems({ pathname, items })}
+        {renderNavItems({ pathname, items, onClose })}
       </Box>
       <Divider sx={{ borderColor: "var(--mui-palette-neutral-700)" }} />
     </Drawer>
   );
 }
 
-function renderNavItems({ items = [], pathname }) {
+function renderNavItems({ items = [], pathname, onClose }) {
   return (
     <Stack component="ul" spacing={1} sx={{ listStyle: "none", m: 0, p: 0 }}>
       {items.map(({ key, ...item }) => (
@@ -69,7 +69,7 @@ function renderNavItems({ items = [], pathname }) {
   );
 }
 
-function NavItem({ disabled, external, href, icon, matcher, pathname, title }) {
+function NavItem({ disabled, external, href, icon, matcher, pathname, title, onClose }) {
   const active = isNavItemActive({
     disabled,
     external,
