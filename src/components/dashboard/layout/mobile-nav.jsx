@@ -147,7 +147,7 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
           to={href}
           style={{ textDecoration: 'none' }} // Remove default link underline
         >
-          {content}
+          {innerContent}
         </RouterLink>
       </li>
     );
@@ -156,16 +156,7 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
   // For external links or items without href
   return (
     <li>
-      {/* Apply onClick to the Box for external links or non-link items */}
-      <Box
-        onClick={() => {
-          if (typeof onClose === 'function') {
-            onClose();
-          }
-        }}
-      >
-        {innerContent}
-      </Box>
+      {innerContent}
     </li>
   );
 
