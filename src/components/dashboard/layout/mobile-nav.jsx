@@ -89,7 +89,11 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
         rel={external ? "noreferrer" : undefined}
         onClick={() => {
           if (href && !external) {
-            onClose();
+            // Check if onClose is a function before calling it to prevent errors during unmounting
+            if (typeof onClose === 'function') {
+              onClose();
+            }
+
           }
         }}
         sx={{
