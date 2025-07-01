@@ -40,13 +40,12 @@ export function MainNav() {
           <Stack sx={{ alignItems: 'center' }} direction="row" spacing={2}>
             <IconButton
               onClick={() => {
-                setOpenNav(true);
+ setOpenNav(true);
               }}
               sx={{ display: { lg: 'none' } }}
             >
               <ListIcon />
             </IconButton>
-            <Tooltip title="Search">
               <IconButton sx={{ display: { xs: 'none', lg: 'inline-flex' } }}>
                 <MagnifyingGlassIcon />
               </IconButton>
@@ -67,3 +66,4 @@ export function MainNav() {
     </>
   );
 }
+
