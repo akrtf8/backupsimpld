@@ -143,8 +143,9 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
   if (href && !external) { // Conditional return for internal links
     return (
       <li>
-        <RouterLink
-          onClick={() => {
+        <RouterLink // Use RouterLink for internal navigation
+          to={href} // Set the destination using the 'to' prop
+          onClick={() => { // Handle click event to close drawer and navigate
             if (typeof onClose === 'function') onClose();
           }}
           to={href}
