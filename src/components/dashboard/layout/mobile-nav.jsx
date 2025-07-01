@@ -88,17 +88,9 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
         href={external ? href : undefined}
         target={external ? "_blank" : undefined}
         rel={external ? "noreferrer" : undefined}
- onClick={
- external
- ? () => {
-              if (href && !external) {
-                if (typeof onClose === 'function') {
- onClose();
-                }
- navigate(href);
-              }
-            }
- : () => { if (typeof onClose === 'function') { onClose(); } }
+        onClick={() => {
+          if (typeof onClose === 'function') {
+            onClose();
           }
         }}
         sx={{
