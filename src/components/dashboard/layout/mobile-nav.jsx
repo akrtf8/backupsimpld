@@ -144,6 +144,9 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
     return (
       <li>
         <RouterLink
+          onClick={() => {
+            if (typeof onClose === 'function') onClose();
+          }}
           to={href}
           style={{ textDecoration: 'none' }} // Remove default link underline
         >
