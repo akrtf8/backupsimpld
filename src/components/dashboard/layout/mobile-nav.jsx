@@ -87,6 +87,11 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title }) {
         href={external ? href : undefined}
         target={external ? "_blank" : undefined}
         rel={external ? "noreferrer" : undefined}
+        onClick={() => {
+          if (href && !external) {
+            onClose();
+          }
+        }}
         sx={{
           alignItems: "center",
           borderRadius: 1,
