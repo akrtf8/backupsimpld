@@ -20,9 +20,9 @@ export function MobileNav({ open, onClose, items = navItems }) {
     <Drawer
       PaperProps={{
         sx: {
-          "--MobileNav-background": "var(--mui-palette-neutral-950)",
-          "--MobileNav-color": "var(--mui-palette-common-white)",
-          "--NavItem-color": "var(--mui-palette-neutral-300)",
+          "--MobileNav-background": "darkblue",
+          "--MobileNav-color": "white",
+          "--NavItem-color": "lightblue",
           "--NavItem-hover-background": "rgba(255, 255, 255, 0.04)",
           "--NavItem-active-background": "var(--mui-palette-primary-main)",
           "--NavItem-active-color": "var(--mui-palette-primary-contrastText)",
@@ -30,7 +30,7 @@ export function MobileNav({ open, onClose, items = navItems }) {
           "--NavItem-icon-color": "var(--mui-palette-neutral-400)",
           "--NavItem-icon-active-color":
             "var(--mui-palette-primary-contrastText)",
-          "--NavItem-icon-disabled-color": "var(--mui-palette-neutral-600)",
+          "--NavItem-icon-disabled-color": "lightblue",
           bgcolor: "var(--MobileNav-background)",
           color: "var(--MobileNav-color)",
           display: "flex",
