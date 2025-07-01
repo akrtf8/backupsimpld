@@ -71,6 +71,7 @@ function renderNavItems({ items = [], pathname, onClose }) {
 
 function NavItem({ disabled, external, href, icon, matcher, pathname, title, onClose }) {
   const navigate = useNavigate();
+  const Icon = icon ? navIcons[icon] : null;
   const active = isNavItemActive({
     disabled,
     external,
@@ -78,22 +79,9 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
     matcher,
     pathname,
   });
-  const Icon = icon ? navIcons[icon] : null;
 
-  return (
-    <li>
-      <Box
- component={href && !external ? RouterLink : (href ? "a" : "div")}
- to={href && !external ? href : undefined}
-        href={external ? href : undefined}
-        target={external ? "_blank" : undefined}
-        rel={external ? "noreferrer" : undefined}
-        onClick={() => {
-          if (typeof onClose === 'function') {
-            onClose();
-          }
-        }}
-        sx={{
+  const content = (
+    <Box
           alignItems: "center",
           borderRadius: 1,
           color: "var(--NavItem-color)",
@@ -151,5 +139,29 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
         </Box>
       </Box>
     </li>
+  );
+
+  if (href && !external) {
+    return (
+      <li>
+        <RouterLink
+          to={href}
+          onClick={() => {
+            if (typeof onClose === 'function') {
+              onClose();
+            }
+          }}
+          style={{ textDecoration: 'none' }} // Remove default link underline
+        >
+          {content}
+        </RouterLink>
+      </li>
+    );
+  }
+
+  return <li>{content}</li>;
+
+
+}
   );
 }
