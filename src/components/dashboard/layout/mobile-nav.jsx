@@ -79,8 +79,8 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
     matcher,
     pathname,
   });
-
-  const content = (
+  
+  const innerContent = (
     <Box
        sx={{
         alignItems: "center",
@@ -138,16 +138,13 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
           </Typography>
         </Box>
       </Box>
-  if (href && !external) {
+  );
+
+  if (href && !external) { // Conditional return for internal links
     return (
       <li>
         <RouterLink
           to={href}
-          onClick={() => {
-            if (typeof onClose === 'function') {
-              onClose();
-            }
-          }}
           style={{ textDecoration: 'none' }} // Remove default link underline
         >
           {content}
@@ -156,7 +153,20 @@ function NavItem({ disabled, external, href, icon, matcher, pathname, title, onC
     );
   }
 
-  return <li>{content}</li>;
-
+  // For external links or items without href
+  return (
+    <li>
+      {/* Apply onClick to the Box for external links or non-link items */}
+      <Box
+        onClick={() => {
+          if (typeof onClose === 'function') {
+            onClose();
+          }
+        }}
+      >
+        {innerContent}
+      </Box>
+    </li>
+  );
 
 }
